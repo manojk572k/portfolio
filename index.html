@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoj | Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- =======================
+       1) HEADER / NAVBAR
+  ======================== -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a class="logo" href="#home">Manoj<span class="dot">.</span></a>
+
+      <!-- Desktop Nav (Education intentionally NOT included) -->
+      <nav class="nav" aria-label="Primary Navigation">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="btn small ghost" id="themeBtn" type="button">Theme</button>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <a class="drawer-link" href="#home">Home</a>
+      <a class="drawer-link" href="#about">About</a>
+      <a class="drawer-link" href="#experience">Experience</a>
+      <a class="drawer-link" href="#projects">Projects</a>
+      <a class="drawer-link" href="#contact">Contact</a>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =======================
+         2) HERO / HOME SECTION
+    ======================== -->
+    <section class="section hero" id="home">
+      <div class="container hero-grid">
+
+        <!-- Left Content -->
+        <div class="hero-left reveal">
+          <p class="kicker">Full Stack Engineer</p>
+
+          <h1 class="hero-title">
+            Building secure, scalable web apps with clean UI and strong backend design.
+          </h1>
+
+          <p class="hero-sub" id="heroSummary">
+            I build React interfaces, REST APIs, JWT authentication, and database integrations with a focus on quality and performance.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="Manoj_Resume.pdf" download>Download Resume</a>
+          </div>
+
+          <!-- Social Links (replace # with real links) -->
+          <div class="hero-social">
+            <a class="social-btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="social-btn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="social-btn" href="mailto:gadipallimanojkumar@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="hero-right reveal">
+          <div class="profile-card">
+
+            <div class="profile-top">
+              <!-- Profile Image -->
+              <img class="profile-img" src="profile.jpg" alt="Profile photo" />
+
+              <!-- Name + Location -->
+              <div class="profile-meta">
+                <h2 class="profile-name" id="pName">Manoj Kumar Gadipalli</h2>
+                <p class="profile-loc" id="pLoc">Denton, TX</p>
+              </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="badge-row">
+              <span class="badge">React</span>
+              <span class="badge">Node</span>
+              <span class="badge">JWT</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">REST</span>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="quick-cards">
+              <div class="qcard">
+                <p class="qnum">1+</p>
+                <p class="qlabel">Year Exp</p>
+              </div>
+              <div class="qcard">
+                <p class="qnum">MERN</p>
+                <p class="qlabel">Primary Stack</p>
+              </div>
+              <div class="qcard">
+                <p class="qnum">Auth</p>
+                <p class="qlabel">JWT + RBAC</p>
+              </div>
+            </div>
+          </div>
+
+          <a class="scroll-down" href="#about">Scroll ↓</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================
+         3) ABOUT SECTION
+    ======================== -->
+    <section class="section" id="about">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <h2>About</h2>
+          <p>
+            I work across frontend and backend: responsive UI, API design, authentication, and databases.
+            I prefer maintainable code, clear architecture, and predictable delivery.
+          </p>
+        </div>
+
+        <div class="two-col">
+
+          <!-- Left Panel -->
+          <div class="panel reveal">
+            <h3>What I do</h3>
+            <ul class="list">
+              <li>React components, state handling, forms, validation</li>
+              <li>REST API design with Node.js / Express</li>
+              <li>JWT authentication + route protection</li>
+              <li>MongoDB / MySQL integration and data modeling</li>
+              <li>Testing and API tooling with Postman</li>
+              <li>Git/GitHub workflows in Agile sprints</li>
+            </ul>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="panel reveal">
+            <h3>Skills</h3>
+
+            <!-- Skill Bars -->
+            <div class="skill">
+              <div class="skill-top">
+                <span>Frontend (React, UI)</span><span class="pct">85%</span>
+              </div>
+              <div class="track"><div class="fill" data-level="85"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>Backend (APIs, Auth)</span><span class="pct">80%</span>
+              </div>
+              <div class="track"><div class="fill" data-level="80"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>Databases</span><span class="pct">75%</span>
+              </div>
+              <div class="track"><div class="fill" data-level="75"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>Tools (Git, Postman)</span><span class="pct">70%</span>
+              </div>
+              <div class="track"><div class="fill" data-level="70"></div></div>
+            </div>
+
+            <!-- Chips -->
+            <div class="chip-row">
+              <span class="chip">React</span>
+              <span class="chip">Node</span>
+              <span class="chip">Express</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">JWT</span>
+              <span class="chip">Postman</span>
+              <span class="chip">Git/GitHub</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================
+         4) EDUCATION (NO NAV LINK)
+    ======================== -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <h2>Education</h2>
+          <p>Included on the page, but intentionally not inside the navbar.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <h3>University of North Texas (UNT)</h3>
+            <p class="muted">M.S. Information Systems & Technologies · Dec 2025</p>
+            <p class="body">
+              Focused on software development, databases, and systems/analytics foundations.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================
+         5) EXPERIENCE SECTION
+    ======================== -->
+    <section class="section" id="experience">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <h2>Experience</h2>
+          <p>Responsibility-focused description with minor metrics.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Junior Full Stack Engineer — CloudYard</h3>
+            <p class="muted">Hyderabad, India · Aug 2022 – Sep 2023</p>
+
+            <ul class="list">
+              <li>Developed full-stack web features using the MERN stack (React, Node/Express, MongoDB).</li>
+              <li>Built and integrated RESTful APIs with JWT authentication for secure access.</li>
+              <li>Designed reusable React components with clean state handling and validation.</li>
+              <li>Improved reliability via bug fixes, refactoring, and consistent Git/GitHub workflows.</li>
+            </ul>
+
+            <div class="mini-metrics">
+              <span class="mm">Shipped features across sprints</span>
+              <span class="mm">Maintained multiple API endpoints</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================
+         6) PROJECTS SECTION
+    ======================== -->
+    <section class="section" id="projects">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <h2>Projects</h2>
+          <p>Click a card to open details (modal). Replace images later.</p>
+        </div>
+
+        <div class="grid">
+
+          <button class="pbox reveal" type="button"
+            data-title="User Authentication System (React)"
+            data-desc="Login + protected routes + validation + session handling. Clean and secure user flow."
+            data-tech="React, JWT, REST APIs, HTML/CSS"
+            data-link="#">
+            <div class="thumb">Add Image</div>
+            <div class="pinfo">
+              <h3>User Authentication</h3>
+              <p>Protected routes + validation</p>
+            </div>
+          </button>
+
+          <button class="pbox reveal" type="button"
+            data-title="MERN Full Stack Features"
+            data-desc="End-to-end features including API design, middleware, auth, and DB integration."
+            data-tech="Node.js, Express, MongoDB, React"
+            data-link="#">
+            <div class="thumb">Add Image</div>
+            <div class="pinfo">
+              <h3>MERN Features</h3>
+              <p>API + auth + data modeling</p>
+            </div>
+          </button>
+
+          <button class="pbox reveal" type="button"
+            data-title="Database Design & Optimization"
+            data-desc="Normalized schema and improved query performance with better modeling and indexing."
+            data-tech="MySQL, MongoDB, SQL"
+            data-link="#">
+            <div class="thumb">Add Image</div>
+            <div class="pinfo">
+              <h3>DB Optimization</h3>
+              <p>Schema + query tuning</p>
+            </div>
+          </button>
+
+          <button class="pbox reveal" type="button"
+            data-title="Portfolio Website (Vanilla)"
+            data-desc="Responsive site with animations, modal project details, and validated contact form."
+            data-tech="HTML, CSS, JavaScript"
+            data-link="#">
+            <div class="thumb">Add Image</div>
+            <div class="pinfo">
+              <h3>Portfolio</h3>
+              <p>Modern UI + JS interactions</p>
+            </div>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================
+         7) CONTACT SECTION
+    ======================== -->
+    <section class="section" id="contact">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <h2>Contact</h2>
+          <p>Works on all screen sizes. Uses mailto (no backend needed).</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Form -->
+          <form class="panel reveal" id="contactForm">
+            <div class="field">
+              <label for="cname">Name</label>
+              <input id="cname" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="field">
+              <label for="cemail">Email</label>
+              <input id="cemail" type="email" placeholder="Your email" required />
+            </div>
+
+            <div class="field">
+              <label for="csubject">Subject</label>
+              <input id="csubject" type="text" placeholder="Optional subject" />
+            </div>
+
+            <div class="field">
+              <label for="cmsg">Message</label>
+              <textarea id="cmsg" rows="6" placeholder="Write message..." required></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="hint" id="formHint"></p>
+          </form>
+
+          <!-- Contact Details -->
+          <div class="panel reveal">
+            <h3>Details</h3>
+
+            <div class="kv">
+              <span class="k">Name</span>
+              <span class="v" id="cNameOut">Manoj Kumar Gadipalli</span>
+            </div>
+            <div class="kv">
+              <span class="k">Location</span>
+              <span class="v" id="cLocOut">Denton, TX</span>
+            </div>
+            <div class="kv">
+              <span class="k">Email</span>
+              <span class="v" id="cEmailOut">gadipallimanojkumar@gmail.com</span>
+            </div>
+            <div class="kv">
+              <span class="k">Phone</span>
+              <span class="v" id="cPhoneOut">(940)-9775738</span>
+            </div>
+
+            <div class="btn-row">
+              <a class="btn ghost" href="Manoj_Resume.pdf" download>Download Resume</a>
+              <a class="btn ghost" href="#home">Back to Top</a>
+            </div>
+          </div>
+
+        </div>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Manoj Kumar Gadipalli · Built with HTML/CSS/JS</p>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =======================
+       8) PROJECT MODAL
+  ======================== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Project details">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close">×</button>
+      <h3 id="mTitle">Project Title</h3>
+      <p id="mDesc">Project description</p>
+      <p class="mTech" id="mTech">Tech</p>
+      <a class="btn primary" id="mLink" href="#" target="_blank" rel="noreferrer">Open Link</a>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
