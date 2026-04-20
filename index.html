@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoj Kumar Gadipalli | Full-Stack Engineer</title>
+  <meta
+    name="description"
+    content="Full-stack engineer portfolio of Manoj Kumar Gadipalli, focused on secure web applications, modern React interfaces, APIs, and scalable backend systems."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="page-shell"></div>
+
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Go to home section">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">Manoj Kumar Gadipalli</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary Navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          class="icon-btn"
+          id="themeBtn"
+          type="button"
+          aria-label="Switch to light theme"
+          aria-pressed="false"
+        >
+          <span class="theme-indicator"></span>
+        </button>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="drawer"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <a class="drawer-link active" href="#home">Home</a>
+      <a class="drawer-link" href="#about">About</a>
+      <a class="drawer-link" href="#experience">Experience</a>
+      <a class="drawer-link" href="#projects">Projects</a>
+      <a class="drawer-link" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Full-Stack Engineer · React · Node.js · Secure Systems</p>
+          <h1>
+            I build <span>secure, scalable</span> web applications with modern UI,
+            role-based architecture, and dependable backend systems.
+          </h1>
+          <p class="hero-text" id="heroSummary">
+            I design end-to-end products using React, Node.js, Express, MongoDB, and JWT authentication,
+            with a strong focus on usability, maintainability, and real-world application workflows.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore Projects</a>
+            <a class="btn btn-secondary" href="manoj.pdf" download>Download Resume</a>
+          </div>
+
+          <div class="proof-strip">
+            <div class="proof-card">
+              <strong>11%</strong>
+              <span>Reduction in unauthorized access incidents</span>
+            </div>
+            <div class="proof-card">
+              <strong>20%</strong>
+              <span>Less redundant frontend code through modularization</span>
+            </div>
+            <div class="proof-card">
+              <strong>6%</strong>
+              <span>Fewer latency-related defects after query optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="spotlight-card">
+            <div class="spotlight-top">
+              <div>
+                <p class="mini-label">Developer Snapshot</p>
+                <h2 id="pName">Manoj Kumar Gadipalli</h2>
+                <p class="muted" id="pLoc">Denton, TX</p>
+              </div>
+              <img
+                class="profile-img"
+                src="profile.jpg"
+                alt="Portrait of Manoj Kumar Gadipalli"
+              />
+            </div>
+
+            <div class="spotlight-stack">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>JWT</span>
+              <span>RBAC</span>
+            </div>
+
+            <div class="system-card">
+              <div class="terminal-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="system-lines">
+                <p><span class="line-key">Focus:</span> Secure full-stack product development</p>
+                <p><span class="line-key">Strength:</span> Auth flows, APIs, reusable UI systems</p>
+                <p><span class="line-key">Workflow:</span> Git, Postman, CI/CD, performance tuning</p>
+                <p><span class="line-key">Current Brand:</span> Product-minded full-stack engineer</p>
+              </div>
+            </div>
+
+            <div class="hero-links">
+              <a href="https://github.com/manojk572k" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/manojkumargadipalli/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="mailto:gadipallimanojkumar@gmail.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="featured-project">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Build</p>
+          <h2>SecureCart – Role-Based E-Commerce Platform</h2>
+          <p>
+            A full-stack commerce system designed around protected routes, controlled access, API-driven workflows,
+            and reusable UI architecture.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-main reveal">
+            <div class="feature-topline">
+              <span class="pill">React</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">JWT</span>
+            </div>
+
+            <div class="feature-columns">
+              <div>
+                <h3>What I built</h3>
+                <p>
+                  A secure role-based e-commerce platform with dedicated admin and user flows, protected routing,
+                  product operations, cart management, and order-ready backend structure.
+                </p>
+              </div>
+              <div>
+                <h3>Engineering focus</h3>
+                <p>
+                  Authentication architecture, clean frontend composition, REST integration, backend reliability,
+                  and scalable application flow design.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-list-grid">
+              <div class="feature-box">
+                <h4>Auth & Access</h4>
+                <p>JWT-based authentication, protected routes, and controlled admin or user access paths.</p>
+              </div>
+              <div class="feature-box">
+                <h4>Reusable Frontend</h4>
+                <p>Structured components and shared UI patterns to reduce duplication and improve maintainability.</p>
+              </div>
+              <div class="feature-box">
+                <h4>API-Driven Flow</h4>
+                <p>Express-powered REST APIs supporting products, users, carts, and core e-commerce operations.</p>
+              </div>
+              <div class="feature-box">
+                <h4>Scalable Direction</h4>
+                <p>Built with separation of concerns in mind so new features can be extended more cleanly.</p>
+              </div>
+            </div>
+
+            <div class="feature-actions">
+              <a class="btn btn-primary" href="https://shope-lite.netlify.app/login" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a class="btn btn-secondary" href="#projects">See More Projects</a>
+            </div>
+          </article>
+
+          <aside class="feature-side reveal">
+            <div class="signal-card">
+              <p class="mini-label">Why this matters</p>
+              <h3>Shows full-stack product thinking</h3>
+              <ul>
+                <li>Authentication before feature expansion</li>
+                <li>API structure supporting frontend workflows</li>
+                <li>Clear role separation for maintainable growth</li>
+                <li>Production-style application foundation</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Full-stack development with a systems mindset</h2>
+          <p>
+            I enjoy building complete web experiences from interface to API to database. My focus is on applications where
+            clean UI, secure authentication, structured backend logic, and maintainable code all matter together.
+          </p>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <h3>Frontend Engineering</h3>
+            <p>React-based interfaces, reusable component patterns, responsive layouts, and maintainable UI structure.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3>Backend Development</h3>
+            <p>REST API design, Express middleware, validation, application flow logic, and integration-driven development.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3>Authentication & Security</h3>
+            <p>JWT authentication, role-based access control, route protection, and secure request handling.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3>Database Systems</h3>
+            <p>MongoDB data modeling, query optimization, schema design, indexing strategies, and relational normalization.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3>Testing & Delivery</h3>
+            <p>Postman and cURL for API validation, Git workflows, pull requests, and CI/CD-aware release discipline.</p>
+          </article>
+          <article class="capability-card reveal">
+            <h3>How I Build</h3>
+            <p>I start with application structure first, then connect auth, data flow, and user experience into one stable system.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Engineering work with measurable outcomes</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-card reveal">
+            <div class="timeline-head">
+              <div>
+                <h3>CloudYard — Junior Full Stack Engineer</h3>
+                <p class="muted">Hyderabad, India · Aug 2022 – Sep 2023</p>
+              </div>
+              <span class="timeline-badge">Production Work</span>
+            </div>
+            <ul class="detail-list">
+              <li>Architected a role-based file-sharing platform using React, Node.js, Express, and MongoDB for secure document workflows.</li>
+              <li>Implemented JWT authentication, RBAC, token validation, and secure session handling, contributing to an 11% reduction in unauthorized access incidents.</li>
+              <li>Restructured frontend architecture into modular React components, reducing redundant code by 20% and improving maintainability.</li>
+              <li>Delivered production-ready features in Agile sprints using Git workflows, Postman, and CI/CD-aware release practices.</li>
+              <li>Optimized MongoDB indexing and query structure, reducing latency-related defects by 6% and improving API stability.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card reveal">
+            <div class="timeline-head">
+              <div>
+                <h3>CloudYard — Software Engineering Intern</h3>
+                <p class="muted">Hyderabad, India · Feb 2022 – Aug 2022</p>
+              </div>
+              <span class="timeline-badge">Foundation</span>
+            </div>
+            <ul class="detail-list">
+              <li>Contributed to early-stage frontend and backend development of the role-based file-sharing platform under senior engineering mentorship.</li>
+              <li>Maintained React UI components aligned with existing design patterns to improve consistency across application modules.</li>
+              <li>Implemented and validated REST API endpoints in Express.js while supporting JWT-based authentication during integration testing.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected Builds</h2>
+          <p>Full-stack applications focused on authentication, APIs, and real-world workflows.</p>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card reveal" href="https://shope-lite.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <div class="project-image-wrap">
+              <img src="ecommerce.png" alt="SecureCart preview" class="project-image" />
+            </div>
+            <div class="project-content">
+              <p class="project-type">Featured Full-Stack Build</p>
+              <h3>SecureCart</h3>
+              <p>
+                Role-based e-commerce platform with JWT authentication, protected routes, and REST API integration.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>JWT</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="https://astachamma.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <div class="project-image-wrap">
+              <img src="ashtachamma.png" alt="Ashtachamma preview" class="project-image" />
+            </div>
+            <div class="project-content">
+              <p class="project-type">Game Engine</p>
+              <h3>Ashtachamma</h3>
+              <p>
+                Rule-based multiplayer game with movement logic, turn sequencing, and gameplay state management.
+              </p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>Game Logic</span>
+                <span>DOM</span>
+                <span>State</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="https://healthcare-dashboard-six-neon.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <div class="project-image-wrap">
+              <img src="healthcare.png" alt="Healthcare Dashboard preview" class="project-image" />
+            </div>
+            <div class="project-content">
+              <p class="project-type">React Dashboard Project</p>
+              <h3>Healthcare Dashboard</h3>
+              <p>
+                Interactive healthcare dashboard built with React and API integration, where selecting a patient dynamically updates the screen with that patient’s diagnosis history, vitals, and related dashboard data.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>API Integration</span>
+                <span>State Management</span>
+                <span>Dynamic Rendering</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something useful and well-structured</h2>
+          <p>
+            I’m interested in full-stack roles where product thinking, secure application design, and maintainable engineering matter.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <p class="mini-label">Reach Out</p>
+            <h3>Available for full-stack opportunities</h3>
+            <div class="contact-list">
+              <div>
+                <span>Email</span>
+                <a id="cEmailOut" href="mailto:gadipallimanojkumar@gmail.com">gadipallimanojkumar@gmail.com</a>
+              </div>
+              <div>
+                <span>Location</span>
+                <a id="cLocOut" href="https://www.google.com/maps?q=Denton,+TX" target="_blank" rel="noopener noreferrer">Denton, TX</a>
+              </div>
+              <div>
+                <span>Phone</span>
+                <a id="cPhoneOut" href="tel:+19409775738">(940) 977-5738</a>
+              </div>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:gadipallimanojkumar@gmail.com">Send Email</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/manojkumargadipalli/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="field-row">
+              <label for="cname">Name</label>
+              <input id="cname" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field-row">
+              <label for="cemail">Email</label>
+              <input id="cemail" type="email" placeholder="Your email" required />
+            </div>
+            <div class="field-row">
+              <label for="csubject">Subject</label>
+              <input id="csubject" type="text" placeholder="Opportunity, collaboration, or project discussion" />
+            </div>
+            <div class="field-row">
+              <label for="cmsg">Message</label>
+              <textarea id="cmsg" rows="6" placeholder="Write your message" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Open Email Draft</button>
+            <p class="form-hint" id="formHint" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <footer class="footer reveal">
+          <p>© <span id="year"></span> Manoj Kumar Gadipalli · Designed and built with HTML, CSS, and JavaScript.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
